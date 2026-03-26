@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('figtree.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+* {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(47, 88%, 63%);
+  font-family: 'Figtree';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+.blog-card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: hsl(0, 0%, 100%);
+  height: 430px;
+  width: 310px;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid black;
+  gap: 16px;
+  box-shadow: 6px 6px 0 black;
+}
+
+.blog-card figure img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.blog-card header {
+  display: flex;
+  flex-direction: column;
+  gap: inherit;
+}
+
+.blog-card header span {
+  width: fit-content;
+  font-size: 0.8rem;
+  font-weight: 800;
+  background: hsl(47, 88%, 63%);
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.blog-card header time {
+  font-size: 0.8rem;
+}
+
+.blog-card header h1 {
+  font-weight: 800;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.blog-card header h1:hover {
+  color: hsl(47, 88%, 63%);
+}
+
+.blog-card p {
+  font-size: 0.85rem;
+  color: hsl(0, 0%, 42%);
+}
+
+.blog-card footer {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  gap: 12px;
+}
+
+.blog-card footer img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.blog-card footer span {
+  font-weight: 800;
+  font-size: 0.8rem;
+}
