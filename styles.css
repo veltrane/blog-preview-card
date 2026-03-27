@@ -1,3 +1,7 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+}
+
 @font-face {
   font-family: 'Figtree';
   src: url('figtree.ttf') format('truetype');
@@ -6,20 +10,20 @@
 }
 
 * {
-  font-weight: 500;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background: hsl(47, 88%, 63%);
-  font-family: 'Figtree';
+  background: var(--yellow);
+  font-family: 'Figtree', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .blog-card {
@@ -52,7 +56,7 @@ body {
   width: fit-content;
   font-size: 0.8rem;
   font-weight: 800;
-  background: hsl(47, 88%, 63%);
+  background: var(--yellow);
   padding: 5px 10px;
   border-radius: 3px;
 }
@@ -68,7 +72,7 @@ body {
 }
 
 .blog-card header h1:hover {
-  color: hsl(47, 88%, 63%);
+  color: var(--yellow);
 }
 
 .blog-card p {
